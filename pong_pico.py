@@ -1,3 +1,10 @@
+"""
+
+Pong for Raspberry Pi Pico W using MicroPython, 2 button switches
+and a SSD1306 128x64 OLED display.
+
+"""
+
 from machine import Pin, I2C
 import ssd1306
 from time import sleep_ms
@@ -156,3 +163,4 @@ while True:
     ball.check()
     oled.show()
     sleep_ms(CLOCK)
+
